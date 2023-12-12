@@ -11,8 +11,8 @@ import config  # Ensure that you have a config.py file with WIFI_SSID and WIFI_P
 
 # region Github and Wi-Fi info
 # GitHub repository information
-GITHUB_USER = "Paul-sav"
-GITHUB_REPO = "Project-Dev"
+GITHUB_USER = "Anthony-vanier2021"
+GITHUB_REPO = "platform-robot"
 GITHUB_FILE = "main.py"
 
 # Connect to Wi-Fi
