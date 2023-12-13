@@ -12,7 +12,7 @@ dir1 = Pin(config.DIR1_PINNUM, mode=Pin.OUT, value=0)
 step.freq(1_000)    #1KHz frequency
 
 
-for i in range(10):
+for i in range(2):
     step.duty(512)
     time.sleep_ms(500)
     step.duty(0)
