@@ -14,7 +14,7 @@ dir1 = Pin(config.DIR2_PINNUM, mode=Pin.OUT, value=0)
 #step.freq(10)    #10Hz frequency
     #time.sleep_us(500)
 
-num_step = 100
+num_step = 1000
 dir1.value(0 if num_step > 0 else 1)
 print("Entering loop")
 for i in range(abs(num_step)):
