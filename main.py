@@ -15,7 +15,7 @@ dir = Pin(config.DIR2_PINNUM, mode=Pin.OUT, value=1)
     #time.sleep_us(500)
 
 num_step = 1000
-dir1.value(0 if num_step > 0 else 1)
+dir.value(0 if num_step > 0 else 1)
 print("Entering loop")
 for i in range(abs(num_step)):
     step.value(1)
