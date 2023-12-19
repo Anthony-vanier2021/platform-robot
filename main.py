@@ -21,5 +21,6 @@ while True:
     if data == "END":
         break;
 
+print("Goodbye!")
 UDPserver.close()
 
