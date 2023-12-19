@@ -10,18 +10,15 @@ step = Pin(config.STEP_PINNUM, mode=Pin.OUT)
 rsth = Pin(config.RSTH_PINNUM, mode=Pin.OUT, value=1)
 slph = Pin(config.SLPH_PINNUM, mode=Pin.OUT, value=1)
 dir1 = Pin(config.DIR1_PINNUM, mode=Pin.OUT, value=0)
-print("Setting frequency to 10Hz")
-step.freq(10)    #10Hz frequency
-
+#print("Setting frequency to 10Hz")
+#step.freq(10)    #10Hz frequency
+    #time.sleep_us(500)
 print("Entering loop")
 for i in range(100):
-    step.duty(512)
-    time.sleep_us(500)
-    step.duty(0)
-    dir1.value(1)
-    step.duty(512)
-    time.sleep_us(500)
-    step.duty(0)
+    step.on()
+    time.sleep_us(100)
+    step.off()
+    time.sleep_us(100)
     print(i)
 
 print("End")
