@@ -10,7 +10,7 @@ step = PWM(Pin(config.STEP_PINNUM, mode=Pin.OUT))
 rsth = Pin(config.RSTH_PINNUM, mode=Pin.OUT, value=1)
 slph = Pin(config.SLPH_PINNUM, mode=Pin.OUT, value=1)
 dir1 = Pin(config.DIR1_PINNUM, mode=Pin.OUT, value=0)
-print("Setting frequency")
+print("Setting frequency to 10Hz")
 step.freq(10)    #10Hz frequency
 
 print("Entering loop")
