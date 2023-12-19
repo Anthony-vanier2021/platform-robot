@@ -1,4 +1,4 @@
-#Remote Hello World - Should Turn West Motor, but doesn't work
+#Remote Hello World - Should Turn East Motor, but doesn't work
 import config, time
 from machine import Pin, PWM
 
